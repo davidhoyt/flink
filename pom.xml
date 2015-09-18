@@ -107,17 +107,21 @@ under the License.
 			<version>${slf4j.version}</version>
 		</dependency>
 
+		<!--
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>${slf4j.version}</version>
+			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
+			<scope>runtime</scope>
 		</dependency>
+		-->
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -920,12 +924,23 @@ under the License.
 										<exclude>log4j-test.properties</exclude>
 									</excludes>
 								</filter>
+								<filter>
+									<artifact>org.slf4j:*</artifact>
+									<excludes>
+										<exclude>org/apache/log4j/*</exclude>
+										<exclude>org/slf4j/impl/*</exclude>
+									</excludes>
+								</filter>
 							</filters>
 							<artifactSet>
 								<includes>
 									<include>com.google.guava:*</include>
 									<include>org.ow2.asm:*</include>
 								</includes>
+								<excludes>
+									<exclude>org.slf4j:slf4j-log4j12</exclude>
+									<exclude>log4j:log4j</exclude>
+								</excludes>
 							</artifactSet>
 							<relocations>
 								<relocation>

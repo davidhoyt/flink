@@ -18,8 +18,8 @@
 
 package org.apache.flink.util;
 
-import org.apache.log4j.PatternLayout;
-import org.apache.log4j.spi.LoggingEvent;
+//import org.apache.log4j.PatternLayout;
+//import org.apache.log4j.spi.LoggingEvent;
 
 /**
  * The logging layout used to prefix each log event with the Maven fork number.
@@ -27,7 +27,7 @@ import org.apache.log4j.spi.LoggingEvent;
  * Use this layout when running tests via Maven in parallel and logging to the Console. When logging
  * to a file, you can use a separate file for each fork.
  */
-public class MavenForkNumberPrefixLayout extends PatternLayout {
+public class MavenForkNumberPrefixLayout {
 
 	/** Property name used to set fork number of the forked JVM. */
 	private static final String PROPERTY = "mvn.forkNumber";
@@ -55,16 +55,16 @@ public class MavenForkNumberPrefixLayout extends PatternLayout {
 		}
 	}
 
-	@Override
-	public String format(LoggingEvent event) {
-		if (prefixLength == 0) {
-			return super.format(event);
-		}
-
-		stringBuilder.setLength(prefixLength);
-
-		stringBuilder.append(super.format(event));
-
-		return stringBuilder.toString();
-	}
+//	@Override
+//	public String format(LoggingEvent event) {
+//		if (prefixLength == 0) {
+//			return super.format(event);
+//		}
+//
+//		stringBuilder.setLength(prefixLength);
+//
+//		stringBuilder.append(super.format(event));
+//
+//		return stringBuilder.toString();
+//	}
 }

@@ -41,6 +41,14 @@ under the License.
 			<version>${hadoop.version}</version>
 			<exclusions>
 				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+				<exclusion>
 					<groupId>asm</groupId>
 					<artifactId>asm</artifactId>
 				</exclusion>
@@ -173,6 +181,14 @@ under the License.
 			<version>${hadoop.version}</version>
 			<exclusions>
 				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+				<exclusion>
 					<groupId>asm</groupId>
 					<artifactId>asm</artifactId>
 				</exclusion>
@@ -304,6 +320,14 @@ under the License.
 			<artifactId>hadoop-mapreduce-client-core</artifactId>
 			<version>${hadoop.version}</version>
 			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
 				<exclusion>
 					<groupId>asm</groupId>
 					<artifactId>asm</artifactId>
@@ -449,6 +473,14 @@ under the License.
 			<version>${hadoop.version}</version>
 			<exclusions>
 				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+				<exclusion>
 					<groupId>asm</groupId>
 					<artifactId>asm</artifactId>
 				</exclusion>
@@ -592,6 +624,14 @@ under the License.
 			<artifactId>hadoop-yarn-common</artifactId>
 			<version>${hadoop.version}</version>
 			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
 				<exclusion>
 					<groupId>asm</groupId>
 					<artifactId>asm</artifactId>

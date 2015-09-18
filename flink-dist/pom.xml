@@ -334,6 +334,18 @@ under the License.
 									<exclude>org.apache.flink:flink-scala-examples</exclude>
 									<exclude>org.apache.flink:flink-streaming-examples</exclude>
 									<exclude>org.apache.flink:flink-python</exclude>
+									<exclude>org.slf4j:slf4j-log4j12</exclude>
+									<exclude>log4j:log4j</exclude>
+									<!--
+									<exclusion>
+										<groupId>org.slf4j</groupId>
+										<artifactId>slf4j-log4j12</artifactId>
+									</exclusion>
+									<exclusion>
+										<groupId>log4j</groupId>
+										<artifactId>log4j</artifactId>
+									</exclusion>
+									-->
 								</excludes>
 							</artifactSet>
 							<transformers>
